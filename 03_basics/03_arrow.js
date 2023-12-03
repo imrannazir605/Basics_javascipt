@@ -10,12 +10,22 @@
 // user.wellcomeMessage()
 // user.username = "saqib"
 // user.wellcomeMessage()
-const user = {
-    username : "hamad",
-    age : 23,
-    userMessage : function(){
-        console.log(`${this.username} , wellcome to our website`);
-    }
 
+
+
+// const user = {
+//     username : "hamad",
+//     age : 23,
+//     userMessage : function(){
+//         console.log(`${this.username} , wellcome to our website`);
+//     }
+
+// }
+// user.userMessage()
+
+
+//arrow function
+const userlogin = (username) => {
+    return `${username} wellcome to the new page`
 }
-user.userMessage()
+console.log(userlogin("imran"));
