@@ -35,4 +35,4 @@ map.set('IN', "INDIA")
 map.set('AUS', 'ASUTRALIA')
 map.set('pak', 'Pakistan')
 
-console.log(`the values of the coutries ${map}`)
+console.log(map)
