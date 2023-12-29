@@ -30,3 +30,26 @@ const promisesThree = new Promise(function (resolve,reject){
 promisesThree.then(function(userData){
    console.log(userData);
 })
+
+
+//promisos four
+
+const promisesFour = new Promise( function (resolve,reject){
+    setTimeout( function (){
+        let Error = true;
+    if(!Error){
+        resolve({language: "java script", password: "kamran321" });
+    }else{
+        reject('eror: js went wrong');
+    }
+},1000)
+
+})
+promisesFour.then(  (user) => {
+    console.log(user);
+    return user.language
+}).then( (language)  => {
+    console.log(language);
+}).catch( function (Error){
+    console.log(Error);
+})
