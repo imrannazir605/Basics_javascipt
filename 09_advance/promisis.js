@@ -53,3 +53,28 @@ promisesFour.then(  (user) => {
 }).catch( function (Error){
     console.log(Error);
 })
+
+//promisis five
+
+const promisesFive = new Promise( function (resolve,reject){
+    setTimeout( function (){
+        let Error = false;
+    if(!Error){
+        resolve({userName: "java script", password: "kamran321" });
+    }else{
+        reject('eror: js went wrong');
+    }
+},1000)
+
+})
+
+async function consumePromiseFive(){
+ try {
+
+  const response = await promisesFive
+   console.log(response);
+} catch (Error){
+    console.log(Error);
+}
+} 
+consumePromiseFive()
